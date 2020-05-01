@@ -1,0 +1,22 @@
+.body{
+	background-image: url("../../PNG Images/image3.jpg"); 
+}
+.content{
+    position: fixed;
+    left: 10%;
+    top: 30%;
+    /* background: black; */
+    /*width: 20%;
+    height: 40%;*/
+}
+.content-p{
+    color: rgb(098, 098, 098);
+    font-size: 30px;
+    top:20%;
+}
+.input-form button{
+	/*width: 40%;*/
+	padding-left:20%;
+	padding-top:400px;
+	background-color:black;
+}

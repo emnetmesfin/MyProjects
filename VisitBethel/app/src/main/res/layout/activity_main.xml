@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bethel"
+
+    android:orientation="vertical"
+    tools:context="com.example.user.visitbethel.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color4"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Visit Bethel"
+        app:titleTextColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/welcome_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+       />
+
+    <TextView
+        android:id="@+id/welcome2_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/welcome_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+         />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="TextView"-->
+        <!--android:textStyle="italic"-->
+        <!--android:textAlignment="center"/>-->
+
+
+    <TextView
+        android:id="@+id/visit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="240dp"
+        android:background="@color/color4"
+        android:fontFamily="cursive"
+        android:onClick="visitButtonClick"
+        android:text="Let's Visit"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/color7"
+        android:textSize="35dp"
+        android:textStyle="bold"
+
+        />
+
+    <!--android:onClick="visitButtonClick"-->
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+</LinearLayout>
+<!--</ScrollView>-->

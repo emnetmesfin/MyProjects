@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="HomeAutomation.LightControl"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HomeAutomation"
+      mc:Ignorable="d"
+             Height="550" Width="950"
+                      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+  
+     FontFamily="{DynamicResource MaterialDesignFont}"
+    
+      >
+
+    <Grid Margin="0">
+        
+            <!-- <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/HomeAutomation;component/images/light5.jpg"/>           
+        </Grid.Background> -->
+        <Grid>
+            <materialDesign:Card Padding="20" Margin="250,20,0,0" >
+                <TextBlock FontSize="24" Style="{DynamicResource MaterialDesignTitleTextBlock}">Please Select what you wish to control:</TextBlock>
+            </materialDesign:Card>
+        </Grid>
+        
+        <!-- <TextBlock x:Name="Descrtiption" FontSize="24" VerticalAlignment="Top" Margin="250,10,0,0">Please Select what you wish to control:</TextBlock> -->
+            <Grid Margin="160,120,250,240">
+                <StackPanel Margin="0,0,0,0" Orientation="Horizontal">
+                    <TextBlock x:Name="Light1Textbox" FontSize="24" VerticalAlignment="Top" Margin="20">LIVING ROOM</TextBlock>
+                    <ToggleButton FontSize="600" Name="Light1Button" Margin="125,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Light1Button_Checked"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,60,0,0" Orientation="Horizontal" Grid.ColumnSpan="2">
+                    <TextBlock x:Name="Light2Textbox" FontSize="24" VerticalAlignment="Top" Margin="20">BED ROOM</TextBlock>
+                    <ToggleButton FontSize="600"  Name="Light2Button" Margin="125,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Light2Button_Checked"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,120,0,0" Orientation="Horizontal">
+                    <TextBlock x:Name="Light3Textbox"  FontSize="24" VerticalAlignment="Top" Margin="20">KITCHN</TextBlock>
+                    <ToggleButton FontSize="600" Name="Light3Button" Margin="125,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Light3Button_Checked" />
+                </StackPanel>
+            </Grid>
+
+            <StackPanel Margin="300,310,250,50" Orientation="Vertical">
+                <GroupBox Header="Setup Connection Here" FontSize="15" Name="groupBox">
+                    <StackPanel>
+                        <ComboBox  Name="PortComboBox" SelectedValuePath="Content" HorizontalAlignment="Left" Height="25" Margin="50,40,0,0" VerticalAlignment="Top" Width="90" Grid.ColumnSpan="2">
+                            <Grid Background="#FFE5E5E5"/>
+                        </ComboBox>
+
+                        <Button x:Name="ConnectButton" Width="120" Height="50" HorizontalAlignment="Center" FontSize="13" Template="{StaticResource RoundButton}" Margin="200,15,30,0" Click="ConnectButton_Click" />
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+            
+
+    </Grid>
+
+</UserControl>

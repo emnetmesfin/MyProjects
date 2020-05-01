@@ -1,0 +1,44 @@
+
+h1{
+	text-align: center;
+	color:#761237;
+	padding-bottom:3%;
+	margin-top:0%;
+}
+#language{
+	height: 10%;
+}
+#field{
+	padding-left: 10%;
+	font-family: sans-serif;
+}
+#field2{
+	padding-left: 5%;
+	font-family: sans-serif;
+}
+#content{
+    background-color: #b8b8b4;
+    padding: 30px;
+    /*alignment-baseline: central;*/
+    width: 50%;
+    margin-left:20%;
+}
+select{
+	height: 200px;
+	width:150px;
+	border-radius: 2px;
+}
+
+#conButton{
+background-color: #309056;
+/*padding: 5px 15px;*/
+margin-top: 20px;
+color: white;
+border-radius: 8px;
+height: 50px;
+}
+#space{
+	background-color: red;
+}
+
+

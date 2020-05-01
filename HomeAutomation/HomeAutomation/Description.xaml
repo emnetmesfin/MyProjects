@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="HomeAutomation.Description"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HomeAutomation"
+             mc:Ignorable="d" 
+            Height="550" Width="900"
+
+                      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+  
+     FontFamily="{DynamicResource MaterialDesignFont}">
+
+
+    <Grid>
+        <StackPanel Margin="160,50,30,100">
+            <Grid>
+                <materialDesign:Card Padding="25" Margin="16,16,50,10">
+                    <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">CONTROL YOUR LIGHTS</TextBlock>
+                </materialDesign:Card>
+            </Grid>
+            
+            <TextBlock Margin="30,10,10,10" FontSize="20" Style="{DynamicResource MaterialDesignTitleTextBlock}">Control Every lights in Your House from the Palm of Your Hand</TextBlock>
+            <TextBlock Margin="35,10,10,10" FontSize="20" Style="{DynamicResource MaterialDesignTitleTextBlock}"> Raise or dim any light in the room or the entire house with a single touch.</TextBlock>
+
+
+            <Grid>
+                <materialDesign:Card Padding="25" Margin="16">
+                    <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">DISPLAY USING LCD DISPLAY</TextBlock>
+                </materialDesign:Card>
+            </Grid>
+
+            <Grid>
+                <materialDesign:Card Padding="25" Margin="16,16,50,16">
+                    <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">MEASURE THE TEMPERATURE OF YOUR ROOM</TextBlock>
+                </materialDesign:Card>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

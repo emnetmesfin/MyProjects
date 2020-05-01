@@ -1,0 +1,156 @@
+body{
+    width: 100%;
+    margin: 0px;
+    background-image: url("../PNG Images/image1.jpg");
+    font-family:"Gotham SSm A","Gotham SSm B","GothamBook",Helvetica,Arial,Verdana,sans-serif;    
+}  
+.sol_invisible{
+    position: fixed;
+    width: 100%;
+    top: 90px;
+    visibility: hidden;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.header_row:hover .header_container{
+    border-bottom: 1px #cccccc solid;
+    border-right: 1px #ccc solid;
+}
+.header_row{
+    width: 100%;
+    height: 80px;   
+}
+.nlink{
+    width: 125px;
+
+}
+.slink{
+    width: 650px;
+     padding-left: 40px;
+}
+
+.header_link{
+    color: white;
+    text-decoration: none;
+    font-family: "Gotham SSm A","Gotham SSm B","GothamBook","Helvetica,Arial","Verdana","sans-serif";
+    font-size: 0.69em;
+    font-weight: 600;
+
+}
+.header_container{
+    text-align: center;
+    border-bottom: 1px #cccccc solid;
+    border-right: 1px #cccccc solid;
+}
+.header_row:hover .header_link{
+    color:black;
+}
+.bag{
+    border-right: 0px;
+}
+.header_row:hover{
+    background-color: white;
+}
+.header_link:hover{
+    text-decoration: underline;  
+}
+.image2{
+    display: none;
+    position: relative;
+    padding-left:250px;
+}
+.header_row:hover .image2
+{
+    display:block;
+}
+.header_row:hover .image1
+{
+    display:none;
+}
+.inv1{
+    width: 10%;
+    font-size: 0.69em;
+    font-weight: 600;
+}
+.sol_inv{
+    height: 120px;
+}
+.inv1{
+    text-align: center;
+}
+.mid_text{
+    position: fixed;
+    left: 130px;
+    top: 300px;
+    width: 340px;
+    color: white;   
+}
+.mid_text h1{
+    font-weight: 100;
+    font-size:35px; 
+}
+.footer{
+    width: 100%;
+    /*background: white;*/
+    position: fixed;
+    bottom: 0px;
+    height: 115px;
+}
+
+.footer_container{
+    text-align: center;
+    border-top: 1px #ccc solid;
+    color: white;
+    font-size: 0.67em;
+    font-weight: 600;
+
+}
+.footer_container:hover{
+    background: white;
+    color: black;
+}
+
+/*.content-1{
+    padding-top:10px;   
+}*/
+.content-2{
+    display: none;
+}
+.f{
+    display: none;
+    position: relative;
+    padding-top: 4px;
+    padding-left:60px;
+}
+.f:hover{
+
+}
+.wrinkles:hover .content-2,.aging:hover .content-2,.dryness:hover .content-2,
+.skintone:hover .content-2,.acne:hover .content-2,.oiliness:hover .content-2,
+.crowsfeet:hover .content-2,.pores:hover .content-2,.firmness:hover .content-2,.spots:hover .content-2
+{
+    display: block;
+}
+
+
+.wrinkles:hover .content-1,.aging:hover .content-1,.dryness:hover .content-1,
+.skintone:hover .content-1,.acne:hover .content-1,.oiliness:hover .content-1,
+.crowsfeet:hover .content-1,.pores:hover .content-1,.firmness:hover .content-1,.spots:hover .content-1
+{
+    display: none;
+}
+
+.wrinkles:hover .icon12,.aging:hover .icon22,.dryness:hover .icon32,
+.skintone:hover .icon42,.acne:hover .icon52,.oiliness:hover .iocn62,
+.crowsfeet:hover .icon72,.pores:hover .icon82,.firmness:hover .icon92,.spots:hover .icon102
+{
+    display: block;
+}
+.wrinkles:hover .image1,.aging:hover .image1,.dryness:hover .image1,
+.skintone:hover .image1,.acne:hover .image1,.oiliness:hover .image1,
+.crowsfeet:hover .image1,.pores:hover .image1,.firmness:hover .image1,.spots:hover .image1
+{
+    display: none;
+}

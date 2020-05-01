@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>guessing game</title>
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+  	<script src="../javascript/js2.js"></script>
+  
+  </head>
+  <body>
+    <div id="contentDiv">
+
+      <form class="" action="index.html" method="post" id="firstForm">
+        <ul>
+          <li>Enter Player name: <input type="text" name="playerName" id="nameInput"></li>
+          <li>Deposit: <input type="number" name="deposit" id="depositInput"></li>
+          <li> <input type="button" name="submitButton" value="submit" onclick="textVisible()"></li>
+
+        </ul>
+
+
+      </form>
+      <p id="content">Welcome to word guessing game <span id="name"></span>..... Guess a country name<br>
+        Each letter is represented by a star.<br>
+        You have to type only one letter at a time <br>
+        You have five tries to try and guess the word<br>
+
+      </p>
+
+      <div id="playMoney">
+        Deposit money to play: <input type="text" name="playDeposit" id="gameMoney">
+        <input type="button" name="depButton" value="Deposit" id="playButton" onclick="acceptMoney()">
+
+      </div>
+
+      <div id="game">
+        <ul>
+          <li>Your total deposit is <span id="totalDeposit"></span> </li>
+          <li>Your deposit for the current game is <span id="cuurrentDeposit"></span> </li>
+
+          <li>Guess a letter: <input type="text" name="guess" id="guess" maxlength="1">
+             <input type="button" name="guessButton" value="guess" id="guessButton" onclick="playGame()">  </li>
+            <li id="status"></li>
+        </ul>
+      <div id="clickHere">
+
+        <a href="number2.html">Click here to play again</a>
+
+      </div>
+
+      </div>
+
+    </div>
+
+
+  </body>
+</html>

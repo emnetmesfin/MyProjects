@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>                                                                                                     
+<head>
+	<meta charset="UTF-8">
+	<title>Ethlopian calander</title>
+<head>
+	<title>Ethiopian Calendar</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/css.css">
+	
+</head>
+<body>
+<h1> Ethiopian Calendar </h1>
+
+<p id = "test"></p>
+
+
+<form id="Calendar-form" name="calendar" action="#" >
+	<fieldset>
+			<label>Month</label>
+			<select name="monthOptions" id="month_val">
+				<option value="1">መስከረም</option>
+				<option value="2">ጥቅምት</option>
+				<option value="3">ህዳር</option>
+				<option value="4">ታህሳስ</option>
+				<option value="5">ጥር</option>
+				<option value="6">የካቲት</option>
+				<option value="7">መጋቢት</option>
+				<option value="8">ሚያዝያ</option>
+				<option value="9">ግንቦት</option>
+				<option value="10">ሰኔ</option>
+				<option value="11">ሀምሌ</option>
+				<option value="12">ነሀሴ</option>
+				<option value="13">ጳጉሜ</option>
+			</select>
+			<label>Year</label>
+			<select name = "yearOption" id = "year">
+				<option value="2010">2000</option>
+				<option value="2011">2001</option>
+				<option value="2012">2002</option>
+				<option value="2013">2003</option>
+				<option value="2014">2004</option>
+				<option value="2015">2005</option>
+				<option value="2016">2006</option>
+				<option value="2017">2007</option>
+				<option value="2017">2008</option>
+				<option value="2017">2009</option>
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2017">2018</option>
+			</select>
+			<input type="button" id="submit-button" name="submit" value="Generate Monthly" onclick="display_monthly()">
+			<input type="button" id="submit-button" name="submit" value="Generate Yearly" onclick="display_yearly()">
+		</fieldset>
+	</form>
+
+	<div class="single" id = "single">
+    	
+    </div>
+
+
+    <div class="month" id = "month">
+		<table id = "monthTable" class="monthTable" style="display: none;">
+		   
+		</table>
+	</div>
+</body>
+<script src="../JS/javascript.js" type="text/javascript"></script>
+</html>

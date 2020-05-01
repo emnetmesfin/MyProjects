@@ -1,0 +1,63 @@
+﻿@model TechSupport1.Models.User
+@{ViewBag.Title = "UserProfile";
+    Layout = "~/Views/Shared/_userLayout.cshtml ";
+
+
+}
+<h3 style="color:white">My profile</h3>
+<div class="well">
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rank)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+
+        <dd>
+            @if (Model.ImageUrl.Length > 0)
+            {
+                <img src="@Url.Content(Model.ImageUrl)" alt="No Image" style="height:200px" class="img-responsive img-circle" />
+
+            }
+            <br />
+            <br />
+            @using (Html.BeginForm("UpdatePicture", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <input type="file" name="Picture" class="col-sm-2 form-control" />
+                <input type="submit" value="save image" class="btn btn-default" />
+            }
+        </dd>
+    </dl>
+</div>
+

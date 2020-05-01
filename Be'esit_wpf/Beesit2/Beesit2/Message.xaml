@@ -1,0 +1,52 @@
+﻿<Window x:Class="Beesit2.Message"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Beesit2"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+       
+        mc:Ignorable="d"
+        Title="Main" Height="800" Width="500" WindowStartupLocation="CenterScreen">
+
+
+    <Grid>
+
+        <Grid  Panel.ZIndex="1000" Height="450" VerticalAlignment="Top" Margin="150,80,92.6,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="34*"/>
+                <RowDefinition Height="281*"/>
+                <RowDefinition Height="135*"/>
+            </Grid.RowDefinitions>
+
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="-35,-4,0,3.6" Grid.RowSpan="3">
+                <StackPanel Name="panel" Height="430" VerticalAlignment="Bottom">
+                    <TextBox Text="Messages" FontSize="25" Width="260" Height="39" Margin="-50,0,-36,10"/>
+                    <Expander HorizontalAlignment="Stretch"  Header="8410" FontSize="20">
+                        <StackPanel
+      Orientation="Vertical"
+      TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+      Margin="24,8,24,16">
+                            <TextBlock FontSize="12"
+        Text="7:00pm" />
+                            <TextBlock FontSize="12"
+        Opacity=".68"
+        Text=" ለመመዝገብ ወደ Beesit እንኳን በደህና መጡ, ስርዓተ-ጥለት በእዚህ ቁጥር ቁጥር yን ያንብቡ.  የሴቶች የኤኰኖሚ ማጎልበቻ ሴቶች ከሀብቶች, ከሀብት, ከገቢው እና ከራሳቸው ጊዜ የመቆጣጠር እና ከስራ እድል ጋር የማቀናበር ችሎታቸውን                      የማስተዳደር እና የእነርሱን ኢኮኖሚያዊ ሁኔታ እና ደህንነታቸውን እንዲያሳድጉ የመቻል መብታቸው ነው."
+        TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Expander>
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Grid>
+            <Image Source="images/newphone.png" Margin="0,0,0.333,0"/>
+        </Grid>
+        <Button Panel.ZIndex="2000" Content="Messages" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Width="134" Margin="115,358,0,0" Height="43" Background="#FF1B1A1A" Foreground="White" Click="messages_click"/>
+        <Button Panel.ZIndex="2000" Content="Phone" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Width="134" Margin="245,358,0,0" Height="43" Background="#FF1B1A1A" Foreground="White" Click="phone_click"/>
+        <Button Panel.ZIndex="2000" Content="Compose" VerticalAlignment="Top" FontSize="20" Margin="186,318,173.6,0" Height="35" Background="#FF1B1A1A" Foreground="White" Click="compose_click"/>
+    </Grid>
+
+
+</Window>

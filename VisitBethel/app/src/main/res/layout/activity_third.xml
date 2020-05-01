@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    android:orientation="vertical"
+    tools:context="com.example.user.visitbethel.thirdActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/color4"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Visit Inside"
+        app:titleTextColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/department_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="10dp"
+        android:onClick="on_department_click"
+        app:srcCompat="@drawable/departments_large"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/bethel_home_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="20dp"
+        android:onClick="on_bethel_home_click"
+        app:srcCompat="@drawable/bethel_home_small"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/spritual_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="20dp"
+        android:onClick="on_spritual_programs_click"
+        app:srcCompat="@drawable/spritual_programs_small"
+        android:layout_weight="1"/>
+</LinearLayout>
+<!--</ScrollView>-->

@@ -1,0 +1,40 @@
+body{
+	width:100%;
+}
+.carousel-inner img {
+   
+	height:500px;
+
+}
+.card-deck{
+  padding-left:150px;
+   padding-right:150px;
+}
+.card img{
+	
+	height:300px;
+}
+#overlayCard{
+	
+	padding-left:-30px;
+
+}
+.row{
+	margin-left:100px;
+	margin-top:-80px;
+}
+nav img{
+	margin-right:50px;
+}
+.jumbotron{
+	margin-top:-50px;
+}
+#login_button{
+	margin-left:-20px;
+	
+	margin-top:20px;
+	width:200px;
+}
+.container p{
+	margin-left:-50px;
+} 

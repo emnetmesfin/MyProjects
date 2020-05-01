@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Visit Bethel</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_text">to the Ethiopia Branch Office of Jehovah’s Witnesses</string>
+    <string name="introduction">Introduction</string>
+    <string name="introduction_text">Welcome to the branch oﬃce of Jehovah’s Witnesses in Ethiopia! We hope your visit will be a pleasant one.
+        Our complex of buildings is called Bethel, meaning “House of God.” This Biblical name is ﬁtting, for the more than 80 men and women
+        who serve here are ordained ministers. They have dedicated themselves to Jehovah God and devote themselves full-time to promoting the
+        worldwide work of Kingdom preaching. Those serving at Bethel can truly be called a family because of their unity in serving their heavenly
+        Father, Jehovah God. As a family, they work together, enjoy meals together, and study the Bible together. In addition, all Bethel family members
+        personally share in the Kingdompreaching and disciple-making work. They are assigned to various congregations in Addis Ababa, where many of them
+        serve as elders and ministerial servants. </string>
+    <string name="continue_visiting">Continue Visiting</string>
+    <color name="color1">#ffe3e3</color>
+    <color name="color2">#001129</color>
+    <color name="color3">#b0ff</color>
+    <color name="color4">#987</color>
+    <color name="color5">#9d4499</color>
+    <color name="color6">#f88fddd9</color>
+    <color name="color7">#f977</color>
+    <color name="color8">#ff000f</color>
+    <color name="color9">#b0ffd700</color>
+    <color name="color10">#30f</color>
+    <color name="color11">#876</color>
+    <color name="color12">#740</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="mahandi_green">#b0808000</color>
+    <color name="color13">#b0ff00</color>
+    <color name="color14">#b0c0c0c0</color>
+
+    <string name="forth_long_text">This department handles correspondence with traveling overseers, congregation elders, pioneers, and publishers.
+        The Service Department also makes territory assignments and compiles reports of ﬁeld service activity. In addition, it schedules district conventions,
+        circuit assemblies, and special assembly days.</string>
+
+    <string name = "home_bethel_title_text"> BETHEL HOME</string>
+
+    <string name = "home_bethel_text">A variety of necessary services are performed at Bethel. For example, some members of the family work in the kitchen,
+        where they prepare nutritious meals for the entire family to enjoy. Other members care for cleaning, laundry, housekeeping, and maintenance.
+        All these assignments are respected and appreciated because they contribute not only to the family’s well-being and high standard of cleanliness but
+        also to a pleasant and eﬃcient work atmosphere.
+</string>
+
+    <string name = "spritual_title_text"> SPRITUAL PROGRAMS</string>
+
+    <string name = "spritual_programs_text">The ﬁnest assets to Bethel are spiritual men and women. Therefore, each member of the Bethel family takes time for
+        personal Bible study. They have access to a well-stocked library. New members of the family are expected to read the entire Bible during their ﬁrst year
+        of Bethel service. They also beneﬁt from the Bethel Entrants’ School. This course is designed to help individuals to progress in their Bible knowledge and
+        to adjust to the Bethel environment. Each workday morning, the Bethel family comes together at the breakfast tables to consider a Bible text from Examining
+        the Scriptures Daily. A chairman presides over this 15-minute discussion, and members of the family are assigned to comment on the text. Following the discussion,
+        the family is led in prayer, after which breakfast is served. On Monday evenings, the Bethel family gathers to study the Bible with the help of The Watchtower.
+        At times, there are other special programs following this study. These Bible discussions each workday morning and on Monday evenings are an important part of
+        Bethel life.
+
+</string>
+    <string name = "shipping_title_text">Shipping Department:</string>
+
+    <string name = "shipping_text"> Literature and magazine requests from congregations throughout Ethiopia are processed each month.
+        These requests are sent electronically to Germany, where the publications are printed, packed, and shipped to our branch. The Shipping Department then distributes
+        some of the literature to depots, where local congregations can pick up their supplies. Other literature requests are shipped to distant congregations by mail
+        or by other means of transport.</string>
+
+    <string name="translation_text_title"> Translation Department:</string>
+
+    <string name="service_text_title"> Serivice Department:</string>
+
+
+    <string name="service_text"> This department handles correspondence with traveling overseers, congregation elders, pioneers, and publishers.
+        The Service Department also makes territory assignments and compiles reports of ﬁeld service activity. In addition, it schedules district conventions,
+        circuit assemblies, and special assembly days. </string>
+
+    <string name="Translation_text">Translation Department: Bible literature, including tracts, brochures, books, and other items, is translated into Amharic, Oromo, Sidama, Tigrinya, and Wolaita. In addition, the Watchtower and Awake! magazines are produced in four
+languages. The English text is received electronically from our headquarters in Brooklyn, New York, U.S.A. After the text is translated, checked, and proofread, it is composed into pages and the artwork is added. Once completed, the publication is forwarded
+        electronically to various branches for printing. At certain times of the year, a small studio is used to record and produce convention dramas
+        in various local languages. </string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_department1">Department1</string>
+    <string name="fragment_department2">Department2</string>
+    <string name="fragment_department3">Department3</string>
+
+    <string name="fragment_bethel_home1">Bethel1</string>
+    <string name="fragment_bethel_home2">Bethel2</string>
+    <string name="fragment_bethel_home3">Bethel3</string>
+
+    <string name="fragment_spritual_programs1">Spritual Program1</string>
+    <string name="fragment_spritual_programs2">Spritual Program2</string>
+    <string name="fragment_spritual_programs3">Spritual Program3</string>
+
+</resources>

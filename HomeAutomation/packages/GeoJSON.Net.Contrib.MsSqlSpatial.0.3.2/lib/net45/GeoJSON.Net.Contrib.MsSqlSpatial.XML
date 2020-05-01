@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeoJSON.Net.Contrib.MsSqlSpatial</name>
+    </assembly>
+    <members>
+        <member name="T:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert">
+            <summary>
+            GeoJSON.Net / MS Sql Server Spatial data types converter.
+            All methods here are static and extensions to GeoJSON.Net types and Sql Server types.
+            </summary>
+            <summary>
+            GeoJSON.Net / MS Sql Server Spatial data types converter.
+            All methods here are static and extensions to GeoJSON.Net types and Sql Server types.
+            </summary>
+            <summary>
+            GeoJSON.Net / MS Sql Server Spatial data types converter.
+            All methods here are static and extensions to GeoJSON.Net types and Sql Server types.
+            </summary>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToGeoJSONGeometry(Microsoft.SqlServer.Types.SqlGeometry,System.Boolean)">
+            <summary>
+            Converts a native Sql Server geometry (lat/lon) to GeoJSON geometry
+            </summary>
+            <param name="sqlGeometry">SQL Server geometry to convert</param>
+            <param name="withBoundingBox">Value indicating whether the feature's BoundingBox should be set.</param>
+            <returns>GeoJSON geometry</returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToGeoJSONObject``1(Microsoft.SqlServer.Types.SqlGeometry,System.Boolean)">
+            <summary>
+            Converts a native Sql Server geometry (lat/lon) to GeoJSON geometry
+            </summary>
+            <param name="sqlGeometry">SQL Server geometry to convert</param>
+            <param name="withBoundingBox">Value indicating whether the feature's BoundingBox should be set.</param>
+            <returns>GeoJSON geometry</returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToGeoJSONGeometry(Microsoft.SqlServer.Types.SqlGeography)">
+            <summary>
+            Converts a native Sql Server geography to GeoJSON geometry
+            </summary>
+            <param name="sqlGeography">SQL Server geography to convert</param>
+            <returns>GeoJSON geometry</returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToGeoJSONObject``1(Microsoft.SqlServer.Types.SqlGeography,System.Boolean)">
+            <summary>
+            Converts a native Sql Server geography to GeoJSON geometry
+            </summary>
+            <param name="sqlGeography">SQL Server geography to convert</param>
+            <param name="withBoundingBox">Value indicating whether the feature's BoundingBox should be set.</param>
+            <returns>GeoJSON geometry</returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeography(GeoJSON.Net.Geometry.Point,System.Int32)">
+            <summary>
+            Converts a GeoJSON Point to an SqlGeography
+            </summary>
+            <param name="point"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeography(GeoJSON.Net.Geometry.MultiPoint,System.Int32)">
+            <summary>
+            Converts a GeoJSON MultiPoint to an SqlGeography
+            </summary>
+            <param name="multiPoint"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeography(GeoJSON.Net.Geometry.LineString,System.Int32)">
+            <summary>
+            Converts a GeoJSON LineString to an SqlGeography
+            </summary>
+            <param name="lineString"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeography(GeoJSON.Net.Geometry.MultiLineString,System.Int32)">
+            <summary>
+            Converts a GeoJSON MultiLineString to an SqlGeography
+            </summary>
+            <param name="multiLineString"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeography(GeoJSON.Net.Geometry.Polygon,System.Int32)">
+            <summary>
+            Converts a GeoJSON Polygon to an SqlGeography
+            </summary>
+            <param name="polygon"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeography(GeoJSON.Net.Geometry.MultiPolygon,System.Int32)">
+            <summary>
+            Converts a GeoJSON MultiPolygon to an SqlGeography
+            </summary>
+            <param name="multiPolygon"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeography(GeoJSON.Net.Geometry.GeometryCollection,System.Int32)">
+            <summary>
+            Converts a GeoJSON GeometryCollection to an SqlGeography
+            </summary>
+            <param name="geometryCollection"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeography(GeoJSON.Net.Feature.Feature,System.Int32)">
+            <summary>
+            Converts a GeoJSON Feature to an SqlGeography
+            </summary>
+            <param name="feature"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeography(GeoJSON.Net.Feature.FeatureCollection,System.Int32)">
+            <summary>
+            Converts a GeoJSON FeatureCollection to a list of SqlGeography, each SqlGeography matching each feature in the collection
+            </summary>
+            <param name="featureCollection"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeometry(GeoJSON.Net.Geometry.Point,System.Int32)">
+            <summary>
+            Converts a GeoJSON Point to an SqlGeometry
+            </summary>
+            <param name="point"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeometry(GeoJSON.Net.Geometry.MultiPoint,System.Int32)">
+            <summary>
+            Converts a GeoJSON MultiPoint to an SqlGeometry
+            </summary>
+            <param name="multiPoint"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeometry(GeoJSON.Net.Geometry.LineString,System.Int32)">
+            <summary>
+            Converts a GeoJSON LineString to an SqlGeometry
+            </summary>
+            <param name="lineString"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeometry(GeoJSON.Net.Geometry.MultiLineString,System.Int32)">
+            <summary>
+            Converts a GeoJSON MultiLineString to an SqlGeometry
+            </summary>
+            <param name="multiLineString"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeometry(GeoJSON.Net.Geometry.Polygon,System.Int32)">
+            <summary>
+            Converts a GeoJSON Polygon to an SqlGeometry
+            </summary>
+            <param name="polygon"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeometry(GeoJSON.Net.Geometry.MultiPolygon,System.Int32)">
+            <summary>
+            Converts a GeoJSON MultiPolygon to an SqlGeometry
+            </summary>
+            <param name="multiPolygon"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeometry(GeoJSON.Net.Geometry.GeometryCollection,System.Int32)">
+            <summary>
+            Converts a GeoJSON GeometryCollection to an SqlGeometry
+            </summary>
+            <param name="geometryCollection"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeometry(GeoJSON.Net.Feature.Feature,System.Int32)">
+            <summary>
+            Converts a GeoJSON Feature to an SqlGeometry
+            </summary>
+            <param name="feature"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.MsSqlSpatialConvert.ToSqlGeometry(GeoJSON.Net.Feature.FeatureCollection,System.Int32)">
+            <summary>
+            Converts a GeoJSON FeatureCollection to a list of SqlGeometry, each SqlGeometry matching each feature in the collection
+            </summary>
+            <param name="featureCollection"></param>
+            <param name="srid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GeoJSON.Net.Contrib.MsSqlSpatial.Sinks.SqlGeographyGeoJsonSink">
+            <summary>
+            Sink converting a SqlGeography to a GeoJSON geometry
+            Usage : <code>SqlGeographyGeoJsonSink sink = new SqlGeographyGeoJsonSink();
+            sqlgeography.Populate(sink);
+            // sink.BoundingBox returns a GeoJSON compliant double[] bbox 
+            return sink.ConstructedGeography; // returns an IGeometryObject
+            </code> 
+            </summary>
+        </member>
+        <member name="T:GeoJSON.Net.Contrib.MsSqlSpatial.Sinks.SqlGeometryGeoJsonSink">
+            <summary>
+            Sink converting a SqlGeometry to a GeoJSON geometry
+            Usage : <code>SqlGeometryGeoJsonSink sink = new SqlGeometryGeoJsonSink();
+            sqlGeometry.Populate(sink);
+            // sink.BoundingBox returns a GeoJSON compliant double[] bbox 
+            return sink.ConstructedGeometry; // returns an IGeometryObject
+            
+            </code> 
+            </summary>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.SqlSpatialExtensions.BoundingBox(Microsoft.SqlServer.Types.SqlGeometry)">
+            <summary>
+            Computes bounding box of a geometry instance
+            </summary>
+            <param name="geom"></param>
+            <returns>Array of doubles in this order: xmin, ymin, xmax, ymax</returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.SqlSpatialExtensions.Geometries(Microsoft.SqlServer.Types.SqlGeometry)">
+            <summary>
+            Easier to use geometry enumerator than STGeometryN()
+            </summary>
+            <param name="geom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.SqlSpatialExtensions.Points(Microsoft.SqlServer.Types.SqlGeometry)">
+            <summary>
+            Easier to use points enumerator on SqlGeometry
+            </summary>
+            <param name="geom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.SqlSpatialExtensions.InteriorRings(Microsoft.SqlServer.Types.SqlGeometry)">
+            <summary>
+            Easier to use interior geometry enumerator on SqlGeometry polygons
+            </summary>
+            <param name="geom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.SqlSpatialExtensions.MakeValidIfInvalid(Microsoft.SqlServer.Types.SqlGeometry)">
+            <summary>
+            Easier to use MakeValid() that validates only if required
+            </summary>
+            <param name="geom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.SqlSpatialExtensions.BoundingBox(Microsoft.SqlServer.Types.SqlGeography)">
+            <summary>
+            Computes bounding box of a geography instance
+            </summary>
+            <param name="geom"></param>
+            <returns>Array of doubles in this order: xmin, ymin, xmax, ymax</returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.SqlSpatialExtensions.Geometries(Microsoft.SqlServer.Types.SqlGeography)">
+            <summary>
+            Easier to use geometry enumerator than STGeometryN()
+            </summary>
+            <param name="geom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.SqlSpatialExtensions.Points(Microsoft.SqlServer.Types.SqlGeography)">
+            <summary>
+            Easier to use points enumerator on SqlGeography
+            </summary>
+            <param name="geom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.SqlSpatialExtensions.MakeValidIfInvalid(Microsoft.SqlServer.Types.SqlGeography)">
+            <summary>
+            Easier to use MakeValid() that validates only if required
+            </summary>
+            <param name="geom"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GeoJSON.Net.Contrib.MsSqlSpatial.WktConvert">
+            <summary>
+            Well Known Text (WKT) helper class. Allow to generate GeoJSON objects from WKT.
+            </summary>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.WktConvert.GeoJSONGeometry(System.String,System.Int32)">
+            <summary>
+            IGeometryObject representing WKT
+            </summary>
+            <param name="wkt">WKT string</param>
+            <param name="spatialReferenceId">SRID (defaults to WGS84)</param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoJSON.Net.Contrib.MsSqlSpatial.WktConvert.GeoJSONObject``1(System.String,System.Int32)">
+            <summary>
+            GeoJSON typed object representing WKT
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="wkt">WKT string</param>
+            <param name="spatialReferenceId">SRID (defaults to WGS84)</param>
+            <returns></returns>
+        </member>
+        <member name="T:SqlServerTypes.Utilities">
+            <summary>
+            Utility methods related to CLR Types for SQL Server 
+            </summary>
+        </member>
+        <member name="M:SqlServerTypes.Utilities.LoadNativeAssemblies(System.String)">
+            <summary>
+            Loads the required native assemblies for the current architecture (x86 or x64)
+            </summary>
+            <param name="rootApplicationPath">
+            Root path of the current application. Use Server.MapPath(".") for ASP.NET applications
+            and AppDomain.CurrentDomain.BaseDirectory for desktop applications.
+            </param>
+        </member>
+    </members>
+</doc>

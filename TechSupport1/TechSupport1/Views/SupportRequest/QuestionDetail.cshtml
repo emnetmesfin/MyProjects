@@ -1,0 +1,94 @@
+﻿@model IEnumerable<TechSupport1.Models.Comment>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_userLayout.cshtml ";
+
+
+}
+
+<h2 style="color:white" class="text-center">Discussion Room</h2>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div style="margin-top:-100px">
+    @using (Html.BeginForm("Search", "SupportRequest", FormMethod.Post))
+    {
+    <span style="margin-bottom:">
+        <p>@Html.TextBox("SearchString")</p>
+        <input type="submit" value="Search" class="btn btn-primary">
+    </span>
+      <h3>Search Result...</h3>  
+
+    }
+</div>
+
+
+<div style="margin-top:40px;">
+
+    @foreach (var comment in Model)
+    {
+
+        if (comment.user.Id != Convert.ToInt32(Session["UserId"]))
+        {
+
+            <ul class="media-list ">
+                <li class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            @if (comment.user.ImageUrl.Length > 0)
+                            {
+                                <img class="media-object img-circle" src="@Url.Content(comment.user.ImageUrl)" style="height:40px;width:40px">
+
+                            }
+                            else
+                            {
+                                <img class="media-object img-circle" src="~/Profile Images/profil.png" style="height:40px;width:40px">
+                            }
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" style="text-transform:capitalize ;color:white">@comment.user.Username</h4>
+                        @comment.Text <span style="margin-left:10px "> @comment.CreatedOn</span>
+                    </div>
+                </li>
+                @foreach (var reply in comment.Replies)
+                {
+                    <li class="media">
+                        <div class="media-right">
+                            <a href="#">
+                                @if (reply.user.ImageUrl.Length > 0)
+                                {
+                                    <img class="media-object img-circle" src="@Url.Content(reply.user.ImageUrl)" style="height:40px;width:40px">
+
+                                }
+                                else
+                                {
+                                    <img class="media-object img-circle" src="~/Profile Images/profil.png" style="height:40px;width:40px">
+                                }
+
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" style="text-transform:capitalize ;color:white">@reply.user.Username</h4>
+                            @reply.Text<span style="margin-left:10px">@reply.CreatedOn</span>
+                        </div>
+
+                    </li>
+                }
+                @using (Html.BeginForm("PostReply", "SupportRequest", FormMethod.Post))
+                {
+
+                    <input type="text" name="Reply" style="width:100%;height:100px" placeholder="Type Answer here.." class="form-control" />
+                    <br />
+                    <input type="hidden" name="CID" value="@comment.Id" />
+                    <input type="submit" value="Post Answer" class="btn btn-primary" />
+                }
+                <hr />
+            </ul>
+
+        }
+    }
+</div>

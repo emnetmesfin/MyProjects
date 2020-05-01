@@ -1,0 +1,313 @@
+﻿@model IEnumerable<AddisUniversity.ViewModels.EnrollmentDateGroup>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Site made with Mobirise Website Builder v4.9.1, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.9.1, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="/assets/images/logo-122x122.png" type="image/x-icon">
+    <meta name="description" content="Web Site Generator Description">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="/assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="/assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="/assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="/assets/theme/css/style.css">
+    <link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+<body>
+    <link rel="stylesheet" href="style.less" class="cid-rgNArKATWu" id="menu1-h" data-rv-view="1058"><section class="menu cid-rgNArKATWu" once="menu" id="menu1-h">
+
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="https://mobirise.co">
+                            <img src="/assets/images/logo-122x122.png" alt="Mobirise" title="" style="height: 4.9rem;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap" style="font-size: 22px; color:#ffffff;">
+
+                        @Html.ActionLink("Addis University", "Index", "Home")
+
+                    </span>
+                </div>
+            </div>
+            <div class="nav navbar-nav navbar-left">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                        <li class="nav-item">
+                        <li class="nav-link link text-white display-4" style="font-size: 22px; color:#ffffff;">
+                            @Html.ActionLink("Home", "Index", "Home")
+                        </li>
+
+                        <li class="nav-item">
+                        <li class="nav-link link text-white display-4" style="font-size: 22px; color:#ffffff;">
+                            @Html.ActionLink("About Us", "About", "Home")
+                        </li>
+                        <li class="nav-link link text-white display-4" style="font-size: 22px; color:#ffffff;">
+                            @Html.ActionLink("Contact Us", "Contact", "Home")
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav navbar-right" style="font-size: 22px; color:#ffffff; margin-right: 10px">
+                    <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                    <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </section>
+    <section class="services6 cid-rgPDUTMnKO" id="services6-10">
+        <!---->
+        <!---->
+        <!--Overlay-->
+        <!--Container-->
+        <div class="container">
+            <div class="row">
+                <!--Titles-->
+                <div class="title col-12">
+                    <h2 class="align-left mbr-fonts-style m-0 display-2">
+                        <p>
+                        </p><p><br></p><br><p>About Us</p>
+                    </h2>
+                    <h3 class="mbr-section-subtitle mbr-light mbr-fonts-style display-5"><p>Enrollment Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; No of Students</p></h3>
+                </div>
+                <!--Card-1-->
+
+                @foreach (var item in Model)
+                {
+
+                    <div class="card col-12 pb-5">
+                        <div class="card-wrapper media-container-row media-container-row">
+                            <div class="card-box">
+                                <div class="row">
+                                    <div class="col-12 col-md-2">
+                                        <!--Image-->
+                                        <div class="mbr-figure">
+                                            <img src="/assets/images/product1.jpg" alt="Mobirise">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-10">
+                                        <div class="wrapper">
+                                            <div class="top-line pb-3">
+                                                <h4 class="card-title mbr-fonts-style display-5">
+                                                    @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                                                </h4>
+                                                <p class="mbr-text cost mbr-fonts-style m-0 display-5">
+                                                    @item.StudentCount
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <!--Card-2-->
+
+              
+            </div>
+        </div>
+    </section>
+    <section class="mbr-section contacts2 cid-rgPNrU3jnp" id="contacts2-15">
+        <!---->
+        <!---->
+        <!--Overlay-->
+        <!--Container-->
+        <div class="container">
+            <div class="row">
+                <!--Titles-->
+                <div class="title col-12">
+                    <h2 class="align-left mbr-fonts-style display-2">
+                        Our Contacts
+                    </h2>
+
+                </div>
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-4">
+                            <div class="b b-adress">
+                                <h5 class="align-left mbr-fonts-style m-0 display-5">
+                                    Address:
+                                </h5>
+                                <p class="mbr-text align-left mbr-fonts-style display-7">
+                                    Asko , Addis Ababa City
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="b b-phone">
+                                <h5 class="align-left mbr-fonts-style m-0 display-5">
+                                    Phone:
+                                </h5>
+                                <p class="mbr-text align-left mbr-fonts-style display-7">
+                                    + 251 04 57 57 47
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="b b-mail">
+                                <h5 class="align-left mbr-fonts-style m-0 display-5">
+                                    E-mail:
+                                </h5>
+                                <p class="mbr-text align-left mbr-fonts-style display-7">
+                                    Emnetmes2@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="progress-bars1 cid-rgPvIE2Vno" id="progress-bars1-s">
+
+
+
+        <div class="container">
+            <h2 class="mbr-section-title pb-2 align-center mbr-fonts-style display-2">
+                Horizontal progress bars
+            </h2>
+            <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">Yearly Progress</h3>
+            <div class="progress_elements">
+                <div class="progress1 pb-5">
+                    <div class="title-wrap">
+                        <div class="progressbar-title mbr-fonts-style display-7">
+                            <p>
+                                No of Students
+                            </p>
+                        </div>
+                        <div class="progress_value mbr-fonts-style display-7">
+                            <div class="progressbar-number"></div>
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <progress class="progress progress-primary" max="100" value="70">
+                    </progress>
+                </div>
+
+                <div class="progress2 pb-5">
+                    <div class="title-wrap">
+                        <div class="progressbar-title mbr-fonts-style display-7">
+                            <p>Lorem episum</p>
+                        </div>
+                        <div class="progress_value mbr-fonts-style display-7">
+                            <div class="progressbar-number"></div>
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <progress class="progress progress-primary" max="100" value="80">
+                    </progress>
+                </div>
+
+                <div class="progress3 pb-5">
+                    <div class="title-wrap">
+                        <div class="progressbar-title mbr-fonts-style display-7">
+                            <p>
+                                Lorem episum
+                            </p>
+                        </div>
+                        <div class="progress_value mbr-fonts-style display-7">
+                            <div class="progressbar-number"></div>
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <progress class="progress progress-primary" max="100" value="90">
+                    </progress>
+                </div>
+
+                <div class="progress4">
+                    <div class="title-wrap">
+                        <div class="progressbar-title mbr-fonts-style display-7">
+                            <p>
+                                Lorem episum
+                            </p>
+                        </div>
+                        <div class="progress_value mbr-fonts-style display-7">
+                            <div class="progressbar-number"></div>
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <progress class="progress progress-primary" max="100" value="100">
+                    </progress>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cid-rgPsRfp3oD" id="social-buttons3-p">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="col-md-8 align-center">
+                    <h2 class="pb-3 mbr-section-title mbr-fonts-style display-2">Contact Us</h2>
+                    <div>
+                        <div class="mbr-social-likes">
+                            <span class="btn btn-social socicon-bg-facebook facebook mx-2" title="Share link on Facebook">
+                                <i class="socicon socicon-facebook"></i>
+                            </span>
+                            <span class="btn btn-social twitter socicon-bg-twitter mx-2" title="Share link on Twitter">
+                                <i class="socicon socicon-twitter"></i>
+                            </span>
+                            <span class="btn btn-social plusone socicon-bg-googleplus mx-2" title="Share link on Google+">
+                                <i class="socicon socicon-googleplus"></i>
+                            </span>
+                            <span class="btn btn-social vkontakte socicon-bg-vkontakte mx-2" title="Share link on VKontakte">
+                                <i class="socicon socicon-vkontakte"></i>
+                            </span>
+                            <span class="btn btn-social odnoklassniki socicon-bg-odnoklassniki mx-2" title="Share link on Odnoklassniki">
+                                <i class="socicon socicon-odnoklassniki"></i>
+                            </span>
+                            <span class="btn btn-social pinterest socicon-bg-pinterest mx-2" title="Share link on Pinterest">
+                                <i class="socicon socicon-pinterest"></i>
+                            </span>
+                            <span class="btn btn-social mailru socicon-bg-mail mx-2" title="Share link on Mailru">
+                                <i class="socicon socicon-mail"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="/assets/tether/tether.min.js"></script>
+    <script src="/assets/popper/popper.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="/assets/dropdown/js/script.min.js"></script>
+    <script src="/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="/assets/sociallikes/social-likes.js"></script>
+    <script src="/assets/theme/js/script.js"></script>
+
+
+    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up" )></i></a></div>
+    <input name="animation" type="hidden">
+</body>
+</html>

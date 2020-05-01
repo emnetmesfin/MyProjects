@@ -1,0 +1,193 @@
+﻿@using AddisUniversity.Models
+@model LoginViewModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Site made with Mobirise Website Builder v4.9.1, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.9.1, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="/assets/images/logo-122x122.png" type="image/x-icon">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="/assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="/assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="/assets/theme/css/style.css">
+    <link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+<body>
+    <link rel="stylesheet" href="style.less" class="cid-rgNArKATWu" id="menu1-h" data-rv-view="1058"><section class="menu cid-rgNArKATWu" once="menu" id="menu1-h">
+
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="https://mobirise.co">
+                            <img src="/assets/images/logo-122x122.png" alt="Mobirise" title="" style="height: 4.9rem;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap" style="font-size: 22px; color:#ffffff;">
+
+                        @Html.ActionLink("Addis University", "Index", "Home")
+
+                    </span>
+                </div>
+            </div>
+            <div class="nav navbar-nav navbar-left">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                        <li class="nav-item">
+                        <li class="nav-link link text-white display-4" style="font-size: 22px; color:#ffffff;">
+                            @Html.ActionLink("Home", "Index", "Home")
+                        </li>
+
+                        <li class="nav-item">
+                        <li class="nav-link link text-white display-4" style="font-size: 22px; color:#ffffff;">
+                            @Html.ActionLink("About Us", "About", "Home")
+                        </li>
+                        <li class="nav-link link text-white display-4" style="font-size: 22px; color:#ffffff;">
+                            @Html.ActionLink("Contact Us", "Contact", "Home")
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav navbar-right" style="font-size: 22px; color:#ffffff; margin-right: 10px">
+                    <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                    <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </section>
+
+<h2 style="margin-left: 500px; margin-top: 100px; color:blueviolet">Log In Here</h2>
+    <div class="row">
+        <div class="col-md-8">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+               
+                <hr />
+                <section id="loginForm" style="margin:0px;">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group" style="margin-left: 500px; margin-top: 30px; color:blueviolet">
+                        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-left: 500px; margin-top: 30px; color:blueviolet">
+                        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-left: 500px; margin-top: 30px; color:blueviolet">
+                        <div class="col-md-offset-2 col-md-10">
+                            <div class="checkbox">
+                                @Html.CheckBoxFor(m => m.RememberMe)
+                                @Html.LabelFor(m => m.RememberMe)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-left: 500px; margin-top: 30px; color:blueviolet" >
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Log in" class="btn btn-group-lg" />
+                        </div>
+                    </div>
+                    <p style="margin-left: 500px; font-size: 20px; margin-top: 30px; color:blueviolet">
+                        @Html.ActionLink("Register as a new user", "Register")
+                    </p>
+                    @* Enable this once you have account confirmation enabled for password reset functionality
+                        <p>
+                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                        </p>*@
+
+                </section>
+            }
+
+
+        
+        </div>
+    </div>
+
+    <section class="cid-rgPiEyZCJr" id="social-buttons3-m">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="col-md-8 align-center">
+                    <h2 class="pb-3 mbr-section-title mbr-fonts-style display-2">Contact Us</h2>
+                    <div>
+                        <div class="mbr-social-likes">
+                            <span class="btn btn-social socicon-bg-facebook facebook mx-2" title="Share link on Facebook">
+                                <i class="socicon socicon-facebook"></i>
+                            </span>
+                            <span class="btn btn-social twitter socicon-bg-twitter mx-2" title="Share link on Twitter">
+                                <i class="socicon socicon-twitter"></i>
+                            </span>
+                            <span class="btn btn-social plusone socicon-bg-googleplus mx-2" title="Share link on Google+">
+                                <i class="socicon socicon-googleplus"></i>
+                            </span>
+                            <span class="btn btn-social vkontakte socicon-bg-vkontakte mx-2" title="Share link on VKontakte">
+                                <i class="socicon socicon-vkontakte"></i>
+                            </span>
+                            <span class="btn btn-social odnoklassniki socicon-bg-odnoklassniki mx-2" title="Share link on Odnoklassniki">
+                                <i class="socicon socicon-odnoklassniki"></i>
+                            </span>
+                            <span class="btn btn-social pinterest socicon-bg-pinterest mx-2" title="Share link on Pinterest">
+                                <i class="socicon socicon-pinterest"></i>
+                            </span>
+                            <span class="btn btn-social mailru socicon-bg-mail mx-2" title="Share link on Mailru">
+                                <i class="socicon socicon-mail"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="/assets/tether/tether.min.js"></script>
+    <script src="/assets/popper/popper.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="/assets/dropdown/js/script.min.js"></script>
+    <script src="/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="/assets/sociallikes/social-likes.js"></script>
+    <script src="/assets/theme/js/script.js"></script>
+
+
+    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up" )></i></a></div>
+    <input name="animation" type="hidden">
+</body>
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

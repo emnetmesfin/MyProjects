@@ -1,0 +1,210 @@
+body{
+    width: 100%;
+    margin: 0px;
+    background-image: url("../image1.jpg");  
+}
+.image2{
+	display: none;
+}
+.header:hover .image2{
+	display:block;
+	padding-left:350px;
+	padding-top: 25px;
+}
+.header:hover .image1{
+	display:none;
+}
+.header{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    height: 80px;
+}
+.sol-text{
+    font-size: 0.75em;
+    font-weight: 600;
+}
+.item1{
+    font-size: 0.75em;
+    font-weight: 600;
+}
+.header:hover *{
+    color: black;
+}
+
+.sol-header:hover .sol-inv{
+    display: block;
+}
+/*.col-4 header_content{
+    padding-left:50px;
+}*/
+
+.sol-inv{
+    display: none;
+    position: fixed;
+    top: 75px;
+    /*z-index: 2;*/
+    height: 100px;
+    background: white;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+}
+
+.col-1{
+    width: 8.09%;
+    height: 100%;
+}
+.col-4{
+    width: 51%;
+    height: 100%;  
+}
+.bag{
+    margin-right: 0px;
+}
+.row{
+    width: 100%;
+}
+.header_content{
+        margin: 0px;
+        border-right: 1px #ccc solid;
+        border-bottom: 1px #ccc solid;
+        text-align: center;
+}
+.header_content{
+    color: white;
+}
+
+div{
+    float: left;
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+
+.footer{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0px;
+    height: 115px;
+}
+
+.content{
+    position: fixed;
+    left: 130px;
+    top: 145px;
+    width: 400px;
+    color: white;
+    font-size: 0.75em;
+    font-weight: 500;
+    padding-top:20px;
+}
+.bag{
+    border-right: none;
+}
+.header:hover{
+    background: white;
+}
+
+div{
+    border-collapse: collapse;
+}
+.footer-item{
+    text-align: center;
+    padding-top: 20px;
+}
+.footer-item *{
+    color: white;
+    padding-top: 10px;
+}
+.footer-item:hover{
+    background: white;
+    padding-top:20px;
+}
+.footer-item:hover *{
+    color: black;
+}
+.image{
+    padding-bottom: 10px;
+}
+.item2{
+    display: none;
+}
+.footer-item:hover .item2{
+    display: block;
+}
+.footer-item:hover .item1{
+    display: none;
+}
+.sol-div{
+    position: relative;
+    top: -2px;
+}
+.sol-text{
+    padding-top: 30px;
+}
+.sol-image{
+    height: 25px;
+    width: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+   /* padding-left:100px;*/
+}
+
+.search_bar{
+    text-align: left;
+    display: none;
+    z-index: 2;
+    background: white;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+}
+.search_link:hover .search_bar{
+    display: block;
+}
+.search_link:hover .search-text{
+    display: none;
+}
+.search_link:hover .search-text2{
+    display: block;
+}
+.search-text2{
+    margin-top: 30px;
+    display: none;
+}
+.search_link:hover{
+    border-bottom: none;
+}
+
+.search{
+    width: 88%;
+    height: 100%;
+    border:none;
+    font-size: 25px;
+    padding: 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.foot{
+    width:10%;
+}
+
+.wrinkles:hover .icon12,.aging:hover .icon22,.dryness:hover .icon32,
+.skintone:hover .icon42,.acne:hover .icon52,.oiliness:hover .iocn62,
+.crowsfeet:hover .icon72,.pores:hover .icon82,.firmness:hover .icon92,.spots:hover .icon102
+{
+    display: block;
+    padding-left:60px;
+}
+.wrinkles:hover .icon1,.aging:hover .icon2,.dryness:hover .icon3,
+.skintone:hover .icon4,.acne:hover .icon5,.oiliness:hover .iocn6,
+.crowsfeet:hover .icon7,.pores:hover .icon8,.firmness:hover .icon9,.spots:hover .icon10
+{
+    display:none;
+}

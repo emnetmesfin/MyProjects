@@ -1,0 +1,15 @@
+.content{
+    position: relative;
+    left: 30%;
+    top: 150px;
+    width: 38%;
+    text-align: center;
+}
+.dropdown{
+    background: none;
+    border: none;
+    padding: 5px;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 20px;
+}
